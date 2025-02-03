@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome <br/> To</h2>
+        <h1>Task Manager</h1>
+        <form class="task-form" id="taskForm">
+            <label for="taskInput">Task Name</label>
+            <input type="text" id="taskInput" placeholder="Add a New Task" required><br/>
+            <label for="dateInput">Date</label>
+            <input type="date" id="dateInput" required>
+            <label for="timeInput">Time</label>
+            <input type="time" id="timeInput" required><br/>
+            <button type="submit">Add Task</button>
+        </form>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search Tasks Here" aria-label="Search Tasks">
+            <button type="button" onclick="renderTasks(searchInput.value)">Search task</button>
+        </div>
+        <div class="task-list" id="taskList"></div>
+        <div id="notification" class="notification" style="display:contents">Task time is up!</div>
+        <audio id="alarmSound" src="Alarm.wav" preload="auto"></audio>
+        </div>
+    <script src="./script.js"></script>
+</body>
+</html>

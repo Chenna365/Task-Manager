@@ -1,0 +1,165 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+ 
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease-in-out;
+}
+ 
+h1, h2 {
+    color: #005bea;
+    margin: 0;
+    padding: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+ 
+.task-form input, .task-form button, .search input, .search button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+ 
+.task-form input {
+    background-color: #e3f2fd;
+}
+ 
+.task-form button {
+    background: linear-gradient(145deg, #005bea, #00c6fb);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+ 
+.task-form button:hover {
+    background: linear-gradient(145deg, #00c6fb, #005bea);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+ 
+.search input {
+    background-color: #e3f2fd;
+}
+ 
+.search button {
+    background: linear-gradient(145deg, #005bea, #00c6fb);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+ 
+.search button:hover {
+    background: linear-gradient(145deg, #00c6fb, #005bea);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+ 
+.task-list {
+    margin-top: 20px;
+}
+ 
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e1f5fe;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out;
+}
+ 
+.task-item:hover {
+    background-color: #b3e5fc;
+    transform: scale(1.05);
+}
+ 
+.task-item button {
+    background: linear-gradient(145deg, #005bea, #00c6fb);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 115s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+ 
+.task-item button:hover {
+    background: linear-gradient(145deg, #00c6fb, #005bea);
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+ 
+.task-item input {
+    padding: 5px;
+    border: 1px solid #005bea;
+    border-radius: 5px;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+ 
+.notification {
+    background-color: #ff5252;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out, pulse 1s infinite;
+    display: none;
+}
+/* Style for login and register buttons */
+.container a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #005bea;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+ 
+.container a:hover {
+    background-color: #00c6fb;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+ 
+@keyframes slideIn {
+    from { transform: translateY(-20px); }
+    to { transform: translateY(0); }
+}
+ 
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+ 
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
